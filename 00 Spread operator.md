@@ -16,19 +16,19 @@ without mutating the original defaultPatient).
 ```javascript
 const defaultPatient = {
   id: -1,
-  name: '',
-  lastname: '',
-  sex: 'Male'
+  name: "",
+  lastname: "",
+  sex: "Male",
   temperature: 36.8,
   heartRate: 100,
-  specialty: 'general medicine',
-}
+  specialty: "general medicine"
+};
 
-const createNewPatient(name, lastname) => {
+const createNewPatient = (name, lastname) => {
   // Your code here
-}
+};
 
-const newPatient = createNewPatient('John', 'Doe');
+const newPatient = createNewPatient("John", "Doe");
 
 console.log(newPatient);
 console.log(defaultPatient);
@@ -59,20 +59,19 @@ a new object without mutating the original.
 ```javascript
 const defaultPatient = {
   id: -1,
-  name: '',
-  lastname: '',
-  sex: 'Male',
+  name: "",
+  lastname: "",
+  sex: "Male",
   sensors: {
     temperature: 36.8,
-    heartRate: 100,
+    heartRate: 100
   },
-  specialty: 'general medicine',
-}
+  specialty: "general medicine"
+};
 
-
-const createNewPatient() => {
+const createNewPatient = temperature => {
   // Your code here, update temperature field
-}
+};
 
 const newPatient = createNewPatient(38);
 
@@ -88,19 +87,19 @@ then it should create a new object with the value updated.
 ```javascript
 const defaultPatient = {
   id: -1,
-  name: '',
-  lastname: '',
-  sex: 'Male'
+  name: "",
+  lastname: "",
+  sex: "Male",
   temperature: 36.8,
   heartRate: 100,
-  specialty: 'general medicine',
-}
+  specialty: "general medicine"
+};
 
-const updatePatientInmutable(fieldId, fieldValue, patient) => {
+const updatePatientInmutable = (fieldId, fieldValue, patient) => {
   // Your code here
-}
+};
 
-const newPatient = updatePatientInmutable('lastname', 'Doe');
+const newPatient = updatePatientInmutable("lastname", "Doe");
 
 console.log(newPatient);
 console.log(defaultPatient);
